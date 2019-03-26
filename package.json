@@ -1,0 +1,13 @@
+{
+  "name": "museu-morfologico",
+  "version": "1.0.0",
+  "main": "src/app.js",
+  "repository": "https://github.com/alektobias/museu-morfologico.git",
+  "author": "Alek Tobias <alektobias@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4"
+  }
+}

@@ -1,0 +1,62 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+main {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	animation: bg-imgs 35s infinite;
+}
+
+main section {
+	padding: 35px;
+	width: 450px;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+}
+main section img {
+	margin: 0 auto;
+}
+main div {
+	margin: 45px auto;
+}
+main div a {
+	display: inline-block;
+	text-decoration: none;
+	/* background-color: #a0a642; */
+	padding: 12px 20px;
+	border-radius: 5px;
+	border: none;
+	color: #a0a642;
+	/* color: white; */
+	font-weight: bold;
+	font-size: 16px;
+}
+
+@keyframes bg-imgs {
+	0% {
+		background-image: url("/assets/museu1.jpg");
+	}
+	25% {
+		background-image: url("/assets/museu2.jpg");
+	}
+	50% {
+		background-image: url("/assets/museu3.jpeg");
+	}
+	75% {
+		background-image: url("/assets/museu4.jpg");
+	}
+	100% {
+		background-image: url("/assets/museu5.jpg");
+	}
+}
