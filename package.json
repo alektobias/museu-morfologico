@@ -5,6 +5,9 @@
   "repository": "https://github.com/alektobias/museu-morfologico.git",
   "author": "Alek Tobias <alektobias@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "node src/app.js"
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^7.0.0",
