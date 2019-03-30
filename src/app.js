@@ -10,7 +10,7 @@ app.use(cors());
 app.get('/museu', (req, res, next) => {
 	res.sendFile(view('museu.html'));
 });
-app.get('/realidade-virtual', (req, res, next) => {
+app.get('/realidade-aumentada', (req, res, next) => {
 	res.sendFile(view('realidadeAumentada.html'));
 });
 app.use('/', (req, res, next) => {

@@ -10,12 +10,13 @@
     <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
 
 </head>
-<body>
+<body style="overflow: hidden">
     <a-scene embedded arjs>
-      <!-- create your content here. just a box for now -->
-      <!-- define a camera which will move according to the marker position -->
       <a-marker-camera preset='hiro'>
-          <a-box position='0 0.5 0' material='opacity: 0.5;'></a-box>
+            <a-entity obj-model="obj: url(/models/whale/10054_Whale_v2_L3.obj); mtl: url(/models/whale/10054_Whale_v2_L3.mtl)" 
+            rotation="-90 0 0" scale="0.003 0.003 0.003" position="0 0.5 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000">
+                <a-animation
+            </a-entity
       </a-marker-camera>
     </a-scene>
 </html>
