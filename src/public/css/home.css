@@ -27,6 +27,7 @@ main section img {
 }
 main div {
 	margin: 65px auto 10px auto;
+	text-align: center;
 }
 main div a {
 	display: inline-block;

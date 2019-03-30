@@ -11,7 +11,7 @@ app.get('/museu', (req, res, next) => {
 	res.sendFile(view('museu.html'));
 });
 app.get('/realidade-virtual', (req, res, next) => {
-	res.sendFile(view('realidade.html'));
+	res.sendFile(view('realidadeAumentada.html'));
 });
 app.use('/', (req, res, next) => {
 	res.sendFile(view('index.html'));
