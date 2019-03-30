@@ -10,26 +10,26 @@
 </head>
 <body>
     <a-scene>
-        
-        <!-- <a-obj-model src="/models/BEAR_BLK.OBJ" mtl="/models/BEAR_BLK.mtl" scale="1.2 1.2 1.2" position="0 0 -14.5"></a-obj-model> -->
-        <a-entity obj-model="obj: url(/models/BEAR_BLK.OBJ); mtl: url(/models/BEAR_BLK.mtl)" scale="1.2 1.2 1.2" position="0 0 -14.5"></a-entity>
-        <a-entity obj-model="obj: url(/models/Horse.obj); mtl: url(/models/blank.mtl)" scale="0.035 0.035 0.035" scale="0.8 0.8 0.8" position="13.5 0 -13.5" rotation="-90 -45 0"></a-entity>
-        <a-entity obj-model="obj: url(/models/crocodile/CROCODIL.OBJ); mtl: url(/models/crocodile/CROCODIL.MTL)" position="0 0 -5"></a-entity>
-        <a-entity obj-model="obj: url(/models/elefante/elefante.obj); mtl: url(/models/elefante/elefante.mtl)" position="12 3 0"  rotation="0 -90 0"></a-entity>
-        <a-entity obj-model="obj: url(/models/Irex_obj.obj)" scale="0.005 0.005 0.005" position="-12 0 -12" rotation="0 45 0"></a-entity>
+
+        <a-obj-model src="/models/BEAR_BLK.OBJ" mtl="/models/BEAR_BLK.mtl" scale="1.2 1.2 1.2" position="0 0 -14.5"></a-obj-model>
+        <a-obj-model src="/models/Horse.obj" mtl="models/blank.mtl" scale="0.035 0.035 0.035" scale="0.8 0.8 0.8" position="13.5 0 -13.5" rotation="-90 -45 0"></a-obj-model>
+        <a-obj-model src="/models/crocodile/CROCODIL.OBJ" mtl="models/crocodile/CROCODIL.MTL" position="0 0 -5"></a-obj-model>
+        <a-obj-model src="/models/elefante/elefante.obj" mtl="models/elefante/elefante.mtl" position="12 3 0"  rotation="0 -90 0"></a-obj-model>
+        <a-obj-model src="/models/Irex_obj.obj" material="color: darkgreen" scale="0.005 0.005 0.005" position="-12 0 -12" rotation="0 45 0"></a-obj-model>
         <!-- Norte -->
-        <a-plane position="0 2.5 -15" color="black" height="5" width="30" rotation="0 0 0"></a-plane>
+        <a-plane src="/assets/wall.jpg" repeat="4 1" position="0 3.5 -15" height="7.5" width="30" rotation="0 0 0"></a-plane>
         <!-- Leste -->
-        <a-plane position="15 2.5 0" color="black" height="5" width="30" rotation="0 -90 0"></a-plane>
+        <a-plane src="/assets/wall.jpg" repeat="4 1" position="15 3.5 0" height="7.5" width="30" rotation="0 -90 0"></a-plane>
         <!-- Sul -->
-        <a-plane position="0 2.5 15" color="black" height="5" width="30" rotation="180 0 0"></a-plane>
+        <a-plane src="/assets/wall.jpg" repeat="4 1" position="0 3.5 15" height="7.5" width="30" rotation="180 0 0"></a-plane>
         <!-- Oeste -->
-        <a-plane position="-15 2.5 0" color="black" height="5" width="30" rotation="0 90 0"></a-plane>
+        <a-plane src="/assets/wall.jpg" repeat="4 1" position="-15 3.5 0" height="7.5" width="30" rotation="0 90 0"></a-plane>
         <!-- Chão -->
-        <a-plane color="grey" height="30" width="30" rotation="-90 0 0"></a-plane>
-        <a-entity acceleration="200"camera look-controls wasd-controls position="0 1.6 0"></a-entity>
+        <a-plane src="/assets/floor.jpg" repeat="6 6" height="30" width="30" rotation="-90 0 0"></a-plane>
+        <a-sky color="black"></a-sky>
+
+        <a-entity acceleration="200" camera look-controls wasd-controls position="0 1.6 0"></a-entity>
 
     </a-scene>
-    
 </body>
 </html>
